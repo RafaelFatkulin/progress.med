@@ -1091,6 +1091,7 @@ body.menu-is-active {
 }
 
 .page__content {
+    min-width: 0;
     padding: 25px 0 25px 25px;
     border-left: 1px solid var(--blue-transparent-m);
 }
@@ -1100,11 +1101,19 @@ body.menu-is-active {
         padding-top: 80px;
         padding-bottom: 60px;
     }
+
+    .page__inner {
+        padding-bottom: 80px;
+    }
 }
 
 @media screen and (max-width: 992px) {
     .page__body {
         grid-template-columns: 1fr;
+    }
+
+    .page__inner {
+        padding-bottom: 60px;
     }
 
     .page__title {
@@ -1122,12 +1131,20 @@ body.menu-is-active {
 }
 
 @media screen and (max-width: 768px) {
+    .page__inner {
+        padding-bottom: 48px;
+    }
+
     .page__title {
         padding: 48px;
     }
 }
 
 @media screen and (max-width: 480px) {
+    .page__inner {
+        padding-bottom: 30px;
+    }
+
     .page__title {
         padding: 30px;
     }
@@ -1198,10 +1215,13 @@ body.menu-is-active {
 .medical-institutions__block__body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
     grid-gap: 20px;
 }
 
 .medical-institutions__item {
+    min-height: 274px;
+    transition: var(--transition);
     border: 1px solid var(--blue-transparent-m);
     border-radius: var(--radius-l);
     padding: 20px;
@@ -1236,13 +1256,16 @@ body.menu-is-active {
 
 .medical-institutions__item:hover {
     justify-content: flex-start;
-}
-
-.medical-institutions__item:hover {
     background-color: #C9E2FF;
 }
 
-.medical-institutions__item:hover .medical-institutions__item__image{
+.medical-institutions__item:hover .medical-institutions__item__text {
+    max-height: max-content;
+    display: block;
+    overflow: visible;
+}
+
+.medical-institutions__item:hover .medical-institutions__item__image {
     display: none;
 }
 
@@ -1259,7 +1282,7 @@ body.menu-is-active {
     }
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) {
     .medical-institutions__block__body {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -1293,6 +1316,7 @@ body.menu-is-active {
     .medical-institutions__item:hover .medical-institutions__item__button {
         display: block;
     }
+
     .medical-institutions__item:hover {
         background-color: inherit;
     }
@@ -1321,6 +1345,83 @@ body.menu-is-active {
     .medical-institutions__item__title {
         text-align: center;
         font-size: var(--l);
+    }
+}
+
+/*  ===============================================  */
+
+/*  EXTRACTS  */
+.extracts {
+    display: flex;
+    flex-direction: column;
+}
+
+.extracts__subtitle {
+}
+
+.extracts__items {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.extract__item {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.extract__item:nth-child(2n+1) {
+    background-color: var(--blue-transparent-s);
+}
+
+.extract__item__title,
+.extract__item__date,
+.extract__item__price {
+    display: block;
+}
+
+.extract__item__title {
+    min-width: 240px;
+    width: 50%;
+    flex: 0 0 50%;
+}
+
+.extract__item__date {
+    flex: 0 0 25%;
+    min-width: 120px;
+    width: 25%;
+    text-align: end;
+}
+
+.extract__item__price {
+    min-width: 120px;
+    width: 25%;
+    text-align: end;
+}
+
+.extracts__button {
+    width: min-content;
+}
+
+@media screen and (max-width: 540px) {
+    .extracts__items {
+        margin: 36px 0;
+    }
+    .extract__item {
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .extracts__button {
+        width: 100%;
     }
 }
 /*  ===============================================  */
