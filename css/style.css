@@ -183,6 +183,13 @@ main {
     border-color: var(--blue);
 }
 
+@media screen and (max-width: 768px) {
+    .button-primary {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
+
 .button-green {
     border-radius: var(--radius-s);
     padding: var(--padding-normal);
@@ -422,13 +429,23 @@ a.button {
 }
 
 .menu__navigation__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
     font-size: var(--l);
     transition: var(--transition);
     text-decoration: underline;
 }
 
-.menu__navigation__link:hover {
+.menu__navigation__link:hover,
+.menu__navigation__link-active {
     color: var(--lightblue);
+}
+
+.menu__navigation__link-with-icon {
+    text-decoration: none;
 }
 
 .menu__contacts {
@@ -1105,13 +1122,13 @@ body.menu-is-active {
 
 @media screen and (max-width: 768px) {
     .page__title {
-        padding-top: 48px 0;
+        padding: 48px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .page__title {
-        padding-top: 30px;
+        padding: 30px;
     }
 }
 
@@ -1135,6 +1152,16 @@ body.menu-is-active {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .personal-data__inputs {
+        grid-template-columns: 1fr;
+    }
+
+    .personal-data__button {
+        width: 100%;
+    }
 }
 
 /*  ===============================================  */
