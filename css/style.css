@@ -184,10 +184,6 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-    .button-primary {
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
 }
 
 .button-green {
@@ -505,6 +501,7 @@ body.menu-is-active {
         grid-template-columns: 1fr;
         grid-gap: 48px;
     }
+
     .menu__contacts__title,
     .menu__navigation__title {
         text-align: left;
@@ -520,7 +517,7 @@ body.menu-is-active {
 
     .menu li a,
     .menu li,
-    .menu span{
+    .menu span {
         font-size: var(--m);
     }
 
@@ -879,7 +876,8 @@ body.menu-is-active {
 }
 
 /*   REGISTRATION   */
-.registration {}
+.registration {
+}
 
 .registration__inner {
     padding: 100px 0 140px;
@@ -1013,6 +1011,7 @@ body.menu-is-active {
     .registration__input {
         margin-bottom: 24px;
     }
+
     .registration__input label {
         margin-bottom: 12px;
     }
@@ -1030,7 +1029,8 @@ body.menu-is-active {
 /*  ===============================================  */
 
 /*    PAGE    */
-.page {}
+.page {
+}
 
 .page__inner {
     padding-bottom: 100px;
@@ -1047,10 +1047,11 @@ body.menu-is-active {
 }
 
 .page__sidebar {
-    padding: 25px 25px 0 25px;
+    padding: 25px 25px 25px 0;
 }
 
-.page__sidebar__navigation {}
+.page__sidebar__navigation {
+}
 
 .page__sidebar__list {
     display: flex;
@@ -1136,9 +1137,11 @@ body.menu-is-active {
 
 /*  PERSONAL DATA  */
 
-.personal-data {}
+.personal-data {
+}
 
-.personal-data__form {}
+.personal-data__form {
+}
 
 .personal-data__block {
     margin-bottom: 40px;
@@ -1166,3 +1169,158 @@ body.menu-is-active {
 
 /*  ===============================================  */
 
+/*  MEDICAL INSTITUTIONS  */
+.medical-institutions {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.medical-institutions__block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.medical-institutions__block__head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.medical-institutions__block__head__title {
+}
+
+.medical-institutions__block__head__button {
+}
+
+.medical-institutions__block__body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.medical-institutions__item {
+    border: 1px solid var(--blue-transparent-m);
+    border-radius: var(--radius-l);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.medical-institutions__item__image {
+    transition: var(--transition);
+    border-radius: var(--radius-l);
+}
+
+.medical-institutions__item__title {
+    font-size: var(--m);
+    font-weight: 500;
+}
+
+.medical-institutions__item__text {
+    font-size: var(--s);
+    max-height: 64px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.medical-institutions__item__button {
+    display: none;
+    text-align: center;
+}
+
+.medical-institutions__item:hover {
+    justify-content: flex-start;
+}
+
+.medical-institutions__item:hover {
+    background-color: #C9E2FF;
+}
+
+.medical-institutions__item:hover .medical-institutions__item__image{
+    display: none;
+}
+
+.medical-institutions__item:hover .medical-institutions__item__button {
+    display: inherit;
+    align-self: center;
+    margin-top: auto;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .medical-institutions__block__body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 992px){
+    .medical-institutions__block__body {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .medical-institutions__item__button {
+        pointer-events: auto;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .medical-institutions__item__text {
+        max-height: fit-content;
+        overflow: visible;
+        display: -webkit-box;
+        -webkit-line-clamp: initial;
+        -webkit-box-orient: vertical;
+    }
+
+    .medical-institutions__item:hover {
+        pointer-events: none;
+    }
+
+    .medical-institutions__item:hover .medical-institutions__item__image {
+        display: block;
+        background-color: #C9E2FF;
+    }
+
+    .medical-institutions__item:hover .medical-institutions__item__button {
+        display: block;
+    }
+    .medical-institutions__item:hover {
+        background-color: inherit;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .medical-institutions__block__body {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .medical-institutions__block__head {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .medical-institutions__block__head__button {
+        width: 100%;
+    }
+
+    .medical-institutions__block__body {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .medical-institutions__item__title {
+        text-align: center;
+        font-size: var(--l);
+    }
+}
+/*  ===============================================  */
