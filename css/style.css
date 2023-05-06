@@ -23,6 +23,7 @@
     --blue-transparent-s: rgba(44, 61, 115, 0.05);
     --blue-transparent-m: rgba(44, 61, 115, 0.25);
     --blue-transparent-l: rgba(44, 61, 115, 0.5);
+    --lightblue-transparent: rgba(29, 119, 250, 0.82);
     --card-bg: rgba(255, 255, 255, 0.5);
     --lighter-blue: #91b3fa;
     --green-transparent: rgba(65, 190, 148, 0.29);
@@ -1660,7 +1661,7 @@ body.menu-is-active {
 .appointment-date__form {}
 
 .appointment-date__form__head {
-    padding: 10px;
+    padding: 0 10px 10px 10px;
     border-bottom: 1px solid var(--blue-transparent-l);
 }
 
@@ -1683,11 +1684,11 @@ body.menu-is-active {
 }
 
 .appointment-date__form__item:hover {
-    border-radius: var(--radius-l);
-    -webkit-border-radius: var(--radius-l);
-    -moz-border-radius: var(--radius-l);
-    -ms-border-radius: var(--radius-l);
-    -o-border-radius: var(--radius-l);
+    border-radius: var(--radius-s);
+    -webkit-border-radius: var(--radius-s);
+    -moz-border-radius: var(--radius-s);
+    -ms-border-radius: var(--radius-s);
+    -o-border-radius: var(--radius-s);
     border-color: var(--lighter-blue);
 }
 
@@ -1721,5 +1722,63 @@ body.menu-is-active {
     .appointment-date__button {
         margin-top: 32px;
     }
+}
+/*  ===============================================  */
+
+/*  APPOINTMENT DATE  */
+.appointment-time {}
+
+.appointment-time__form {}
+
+.appointment-time__form__head {
+    padding: 0 10px 10px 10px;
+}
+
+.appointment-time__form__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 3px solid var(--white);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    background-clip: padding-box;
+    margin-bottom: 1px;
+}
+
+.appointment-time__form__item-free {
+    border-color: var(--green-transparent);
+    background-color: var(--green-transparent);
+}
+
+.appointment-time__form__item-engaged {
+    border-color: var(--red);
+    background-color: var(--red);
+}
+
+.appointment-time__form__item:hover {
+    border-radius: var(--radius-s);
+    -webkit-border-radius: var(--radius-s);
+    -moz-border-radius: var(--radius-s);
+    -ms-border-radius: var(--radius-s);
+    -o-border-radius: var(--radius-s);
+    border-color: var(--lightblue-transparent);
+}
+
+.appointment-time__form__head:hover {
+    border-color: var(--white);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.appointment-time__form__item span:first-child {
+    display: block;
+    min-width: 125px;
+    text-align: start;
 }
 /*  ===============================================  */
