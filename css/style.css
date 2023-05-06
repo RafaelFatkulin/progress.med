@@ -16,28 +16,32 @@
 
     /*  COLORS  */
     --white: #fff;
-    --blue: #2C3D73;
-    --lightblue: #1D77FA;
+    --blue: #2c3d73;
+    --lightblue: #1d77fa;
     --lightblue-darken: rgba(29, 119, 250, 0.25);
-    --lightblue-bg: #E9F2FF;
+    --lightblue-bg: #e9f2ff;
     --blue-transparent-s: rgba(44, 61, 115, 0.05);
     --blue-transparent-m: rgba(44, 61, 115, 0.25);
     --blue-transparent-l: rgba(44, 61, 115, 0.5);
     --card-bg: rgba(255, 255, 255, 0.5);
-    --lighter-blue: #91B3FA;
+    --lighter-blue: #91b3fa;
     --green-transparent: rgba(65, 190, 148, 0.29);
-    --green-light: #41BE94;
+    --green-light: #41be94;
     --green-darken: #339071;
-    --gray-border: #F1F1F1;
-    --gray-primary: #DAE4F8;
+    --gray-border: #f1f1f1;
+    --gray-primary: #dae4f8;
     --gray-primary-darken: #a9b2c0;
-    --gray-secondary: #DEDEDE;
-    --gray-darkest: #7D7D7D;
+    --gray-secondary: #dedede;
+    --gray-darkest: #7d7d7d;
     --gray-form-border: #e9e9e9;
     --red: rgba(190, 65, 65, 0.25);
 
-    --menu-bg: linear-gradient(0deg, rgba(44, 61, 115, 0.05), rgba(44, 61, 115, 0.05)), #FFFFFF;
-
+    --menu-bg: linear-gradient(
+            0deg,
+            rgba(44, 61, 115, 0.05),
+            rgba(44, 61, 115, 0.05)
+        ),
+        #ffffff;
 
     /*  SHADOWS  */
     --shadow-light: inset 0px 0px 10px rgba(255, 121, 121, 0.25);
@@ -52,7 +56,7 @@
     --radius-s: 3px;
 
     /*  TRANSITION  */
-    --transition: .25s all linear;
+    --transition: 0.25s all linear;
 
     /*  BUTTON PADDINGS  */
     --p-s: 15px 10px;
@@ -65,7 +69,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
@@ -91,6 +95,7 @@ img {
     max-width: 100%;
     width: 100%;
     height: auto;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -99,12 +104,14 @@ a {
     text-decoration: none;
 }
 
-button, input {
+button,
+input {
     outline: none;
 }
 
 main {
     flex: 1 0 auto;
+    min-height: calc(100vh - 81px - 77px);
 }
 
 .container {
@@ -191,7 +198,7 @@ main {
     padding: var(--padding-normal);
     background-color: var(--green-light);
     border: 1px solid var(--green-light);
-    color: var(--white)
+    color: var(--white);
 }
 
 .button-green:hover {
@@ -242,6 +249,22 @@ a.button {
     transition: var(--transition);
 }
 
+.input::-webkit-input-placeholder {
+    color: var(--blue-transparent-l);
+}
+
+.input::-moz-placeholder {
+    color: var(--blue-transparent-l);
+}
+
+.input:-ms-input-placeholder {
+    color: var(--blue-transparent-l);
+}
+
+.input::-ms-input-placeholder {
+    color: var(--blue-transparent-l);
+}
+
 .input::placeholder {
     color: var(--blue-transparent-l);
 }
@@ -255,7 +278,7 @@ a.button {
 }
 
 .input-password label {
-    content: '';
+    content: "";
     display: inline-block;
     width: 20px;
     height: 16px;
@@ -291,6 +314,7 @@ a.button {
 /*  HEADER  */
 
 .header {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -344,7 +368,7 @@ a.button {
 .header__burger:before,
 .header__burger:after {
     position: absolute;
-    content: '';
+    content: "";
     width: 100%;
     height: 2px;
     transition: var(--transition);
@@ -459,7 +483,7 @@ a.button {
 .menu__contacts__item {
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: flex-start;
     gap: 20px;
 }
 
@@ -546,7 +570,6 @@ body.menu-is-active {
 }
 
 /*  ===============================================  */
-
 
 /*   AUTH BLOCK   */
 .auth {
@@ -649,6 +672,7 @@ body.menu-is-active {
 .swiper-slide-image {
     width: 100%;
     height: auto;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
@@ -786,7 +810,7 @@ body.menu-is-active {
 .instruction__item:hover .instruction__item-body {
     background-color: var(--white);
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
-    border-color: #F7F7F7;
+    border-color: #f7f7f7;
 }
 
 @media screen and (max-width: 1280px) {
@@ -796,7 +820,6 @@ body.menu-is-active {
 }
 
 @media screen and (max-width: 992px) {
-
     .instruction__inner {
         padding: 72px 0;
     }
@@ -1230,7 +1253,7 @@ body.menu-is-active {
 .medical-institutions__block__body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 1fr;
+    grid-auto-rows: auto;
     grid-gap: 20px;
 }
 
@@ -1270,14 +1293,19 @@ body.menu-is-active {
 }
 
 .medical-institutions__item:hover {
+    overflow: hidden;
     justify-content: flex-start;
-    background-color: #C9E2FF;
+    background-color: #c9e2ff;
 }
 
 .medical-institutions__item:hover .medical-institutions__item__text {
-    max-height: max-content;
+    -webkit-line-clamp: 9;
+    max-height: 140px;
+    max-height: 140px;
+    max-height: 140px;
+    overflow: hidden;
+
     display: block;
-    overflow: visible;
 }
 
 .medical-institutions__item:hover .medical-institutions__item__image {
@@ -1290,10 +1318,13 @@ body.menu-is-active {
     margin-top: auto;
 }
 
-
 @media screen and (max-width: 1280px) {
     .medical-institutions__block__body {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .medical-institutions__item {
+        min-height: 324px;
     }
 }
 
@@ -1309,10 +1340,15 @@ body.menu-is-active {
         display: block;
         width: 100%;
         text-align: center;
+        margin-top: auto;
     }
 
     .medical-institutions__item__text {
-        max-height: fit-content;
+        max-height: -webkit-max-content;
+        max-height: -moz-max-content;
+        max-height: max-content;
+        max-height: max-content;
+        max-height: max-content;
         overflow: visible;
         display: -webkit-box;
         -webkit-line-clamp: initial;
@@ -1325,7 +1361,13 @@ body.menu-is-active {
 
     .medical-institutions__item:hover .medical-institutions__item__image {
         display: block;
-        background-color: #C9E2FF;
+        background-color: #c9e2ff;
+    }
+
+    .medical-institutions__item:hover .medical-institutions__item__text {
+        max-height: -webkit-max-content;
+        max-height: -moz-max-content;
+        max-height: max-content;
     }
 
     .medical-institutions__item:hover .medical-institutions__item__button {
@@ -1392,7 +1434,7 @@ body.menu-is-active {
     flex-direction: row;
 }
 
-.extract__item:nth-child(2n+1) {
+.extract__item:nth-child(2n + 1) {
     background-color: var(--blue-transparent-s);
 }
 
@@ -1422,6 +1464,8 @@ body.menu-is-active {
 }
 
 .extracts__button {
+    width: -webkit-min-content;
+    width: -moz-min-content;
     width: min-content;
 }
 
@@ -1433,6 +1477,8 @@ body.menu-is-active {
 
 @media screen and (max-width: 540px) {
     .extract__item {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
 }
@@ -1448,7 +1494,8 @@ body.menu-is-active {
 /*  ===============================================  */
 
 /*    MEDICAL INSTITUTION    */
-.medical-institution {}
+.medical-institution {
+}
 
 .medical-institution__content {
     margin-top: 50px;
@@ -1481,4 +1528,118 @@ body.menu-is-active {
         margin-top: 24px;
     }
 }
+/*  ===============================================  */
+
+/*  APPOINTMENT  */
+
+.appointment {
+}
+
+.appointment__header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+.appointment__subtitle {
+}
+
+.appointment__breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.appointment__breadcrumbs__item {
+    font-size: var(--xs);
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.appointment__breadcrumbs__item a,
+.appointment__breadcrumbs__item span {
+    font-size: inherit;
+}
+
+.appointment__breadcrumbs__item a {
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.appointment__breadcrumbs__item a:hover {
+    color: var(--lightblue);
+}
+
+.appointment__breadcrumbs__item:last-child a {
+    pointer-events: none;
+}
+
+.appointment__breadcrumbs__item:last-child span {
+    display: none;
+}
+
+.appointment__body {
+}
+
+.appointment__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.appointment__button-select {
+    width: 100%;
+    text-align: start;
+    padding: var(--padding-normal);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    border: 3px solid var(--white);
+}
+
+.appointment__button-select:hover {
+    border-color: var(--lighter-blue);
+}
+
+@media screen and (max-width: 768px) {
+    .appointment__breadcrumbs {
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .appointment__button-select {
+        text-align: center;
+    }
+}
+/*  ===============================================  */
+
+
+/*  APPOINTMENT DEPARTMENT  */
+.appointment-department {}
+
+.appointment-department__form {}
+
+.appointment-department__button {}
+/*  ===============================================  */
+
+/*  APPOINTMENT SERVICE  */
+.appointment-service {}
+
+.appointment-service__form {}
+
+.appointment-service__button {}
+/*  ===============================================  */
+
+/*  APPOINTMENT DOCTOR  */
+.appointment-doctor {}
+
+.appointment-doctor__form {}
+
+.appointment-doctor__button {}
 /*  ===============================================  */
