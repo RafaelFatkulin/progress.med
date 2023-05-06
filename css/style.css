@@ -1180,11 +1180,11 @@ body.menu-is-active {
 
 @media screen and (max-width: 480px) {
     .page__inner {
-        padding-bottom: 30px;
+        padding-bottom: 32px;
     }
 
     .page__title {
-        padding: 30px 0;
+        padding: 32px 0;
     }
 }
 
@@ -1608,6 +1608,10 @@ body.menu-is-active {
 }
 
 @media screen and (max-width: 768px) {
+    .appointment__header {
+        margin-bottom: 48px;
+    }
+
     .appointment__breadcrumbs {
         flex-wrap: wrap;
         margin: 0 auto;
@@ -1615,6 +1619,12 @@ body.menu-is-active {
 
     .appointment__button-select {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .appointment__header {
+        margin-bottom: 32px;
     }
 }
 /*  ===============================================  */
@@ -1642,4 +1652,74 @@ body.menu-is-active {
 .appointment-doctor__form {}
 
 .appointment-doctor__button {}
+/*  ===============================================  */
+
+/*  APPOINTMENT DATE  */
+.appointment-date {}
+
+.appointment-date__form {}
+
+.appointment-date__form__head {
+    padding: 10px;
+    border-bottom: 1px solid var(--blue-transparent-l);
+}
+
+.appointment-date__form__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 3px solid var(--white);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.appointment-date__form__item:nth-child(2n) {
+    border-color: var(--blue-transparent-s);
+    background-color: var(--blue-transparent-s);
+    background-clip: padding-box;
+}
+
+.appointment-date__form__item:hover {
+    border-radius: var(--radius-l);
+    -webkit-border-radius: var(--radius-l);
+    -moz-border-radius: var(--radius-l);
+    -ms-border-radius: var(--radius-l);
+    -o-border-radius: var(--radius-l);
+    border-color: var(--lighter-blue);
+}
+
+.appointment-date__form__head:hover {
+    border-color: var(--white);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.appointment-date__form__item span:first-child {
+    display: block;
+    min-width: 125px;
+    text-align: start;
+}
+
+.appointment-date__button {
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .appointment-date__button {
+        width: 100%;
+        margin-top: 48px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .appointment-date__button {
+        margin-top: 32px;
+    }
+}
 /*  ===============================================  */
