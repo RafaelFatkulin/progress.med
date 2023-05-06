@@ -495,6 +495,16 @@ body.menu-is-active {
     overflow: hidden;
 }
 
+@media screen and (max-width: 992px) {
+    .menu__inner {
+        padding: 64px 0;
+    }
+
+    .menu__navigation__title {
+        margin-bottom: 48px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .menu__inner {
         padding: 36px 0;
@@ -1415,18 +1425,60 @@ body.menu-is-active {
     width: min-content;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 768px) {
     .extracts__items {
         margin: 36px 0;
     }
+}
+
+@media screen and (max-width: 540px) {
     .extract__item {
         width: fit-content;
     }
 }
 
 @media screen and (max-width: 480px) {
+    .extracts__items {
+        margin: 24px 0;
+    }
     .extracts__button {
         width: 100%;
+    }
+}
+/*  ===============================================  */
+
+/*    MEDICAL INSTITUTION    */
+.medical-institution {}
+
+.medical-institution__content {
+    margin-top: 50px;
+}
+
+.medical-institution__content p {
+    font-size: var(--s);
+}
+
+.medical-institution__content p:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .medical-institution__subtitle {
+        text-align: center;
+    }
+
+    .medical-institution__content {
+        margin-top: 36px;
+    }
+
+    .medical-institution__content p:not(:last-child) {
+        margin-bottom: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .medical-institution__content {
+        margin-top: 24px;
     }
 }
 /*  ===============================================  */

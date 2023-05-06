@@ -1,193 +1,330 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Поликлиника №52</title>
 
     <!--  Fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!--  Styles  -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<!-- Header -->
-<header class="header">
-    <div class="container">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
         <div class="header__inner">
-            <a href="/" class="logo header__logo">
-                <img src="img/logo.svg" alt="Header logotype">
-                <span>MED.PROGRESS</span>
-            </a>
-            <div class="header__info">
-                <a class="header__phone" href="tel:+79991234567">+7 (999) 123 45 67</a>
-                <div class="header__burger"></div>
-            </div>
+          <a href="/" class="logo header__logo">
+            <img src="img/logo.svg" alt="Header logotype" />
+            <span>MED.PROGRESS</span>
+          </a>
+          <div class="header__info">
+            <a class="header__phone" href="tel:+79991234567"
+              >+7 (999) 123 45 67</a
+            >
+            <div class="header__burger"></div>
+          </div>
         </div>
-    </div>
-</header>
+      </div>
+    </header>
 
-<!--  Menu  -->
-<div class="menu">
-    <div class="container">
+    <!--  Menu  -->
+    <div class="menu">
+      <div class="container">
         <div class="menu__inner">
-            <div class="menu__navigation">
-                <h2 class="title menu__navigation__title">Меню</h2>
-                <nav class="menu__navigation__body">
-                    <ul class="menu__navigation__list">
-                        <li class="menu__navigation__item">
-                            <a href="#" class="menu__navigation__link menu__navigation__link-with-icon">
-                                <svg width="30" height="30" viewBox="0 0 30 30" fill="currentColor"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15 15.0006C17.7619 15.0006 20.0003 12.7618 20.0003 10.0003C20.0003 7.2388 17.7619 5 15 5C12.2381 5 9.99973 7.2388 9.99973 10.0003C9.99973 12.7618 12.2381 15.0006 15 15.0006ZM16.9806 16.8757H13.0194C9.28133 16.8757 6.24951 19.9071 6.24951 23.6456C6.24951 24.3933 6.8558 25 7.6035 25H22.3973C23.145 25.0012 23.7505 24.3957 23.7505 23.6456C23.7505 19.9071 20.7191 16.8757 16.9806 16.8757Z"
-                                          fill="currentColor"/>
-                                </svg>
-                                <span>Личные данные</span>
-                            </a>
-                        </li>
-                        <li class="menu__navigation__item">
-                            <a href="#" class="menu__navigation__link menu__navigation__link-with-icon">
-                                <svg class="" width="30" height="30" viewBox="0 0 30 30" fill="currentColor"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4 8.88878C4 7.53861 5.09427 6.44434 6.44444 6.44434H23.5556C24.9038 6.44434 26 7.53861 26 8.88878V21.111C26 22.4593 24.9038 23.5554 23.5556 23.5554H6.44444C5.09427 23.5554 4 22.4593 4 21.111V8.88878ZM10.1111 14.9999C10.1111 14.3238 9.56493 13.7777 8.88889 13.7777C8.21285 13.7777 7.66667 14.3238 7.66667 14.9999C7.66667 15.6759 8.21285 16.2221 8.88889 16.2221C9.56493 16.2221 10.1111 15.6759 10.1111 14.9999ZM10.1111 11.3332C10.1111 10.6572 9.56493 10.111 8.88889 10.111C8.21285 10.111 7.66667 10.6572 7.66667 11.3332C7.66667 12.0093 8.21285 12.5554 8.88889 12.5554C9.56493 12.5554 10.1111 12.0093 10.1111 11.3332ZM10.1111 18.6666C10.1111 17.9905 9.56493 17.4443 8.88889 17.4443C8.21285 17.4443 7.66667 17.9905 7.66667 18.6666C7.66667 19.3426 8.21285 19.8888 8.88889 19.8888C9.56493 19.8888 10.1111 19.3426 10.1111 18.6666ZM12.5556 10.4166C12.0476 10.4166 11.6389 10.8252 11.6389 11.3332C11.6389 11.8412 12.0476 12.2499 12.5556 12.2499H21.1111C21.6191 12.2499 22.0278 11.8412 22.0278 11.3332C22.0278 10.8252 21.6191 10.4166 21.1111 10.4166H12.5556ZM12.5556 14.0832C12.0476 14.0832 11.6389 14.4919 11.6389 14.9999C11.6389 15.5079 12.0476 15.9166 12.5556 15.9166H21.1111C21.6191 15.9166 22.0278 15.5079 22.0278 14.9999C22.0278 14.4919 21.6191 14.0832 21.1111 14.0832H12.5556ZM12.5556 17.7499C12.0476 17.7499 11.6389 18.1586 11.6389 18.6666C11.6389 19.1745 12.0476 19.5832 12.5556 19.5832H21.1111C21.6191 19.5832 22.0278 19.1745 22.0278 18.6666C22.0278 18.1586 21.6191 17.7499 21.1111 17.7499H12.5556Z"
-                                          fill="currentColor"/>
-                                </svg>
-                                <span class="">Медицинские учреждения</span>
-                            </a>
-                        </li>
-                        <li class="menu__navigation__item">
-                            <a href="#"
-                               class="menu__navigation__link menu__navigation__link-with-icon menu__navigation__link-active">
-                                <svg class="" width="30" height="30" viewBox="0 0 30 30" fill="currentColor"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.5355 5.98358C10.9566 6.36471 10.991 7.01655 10.6086 7.44022L7.51656 10.8794C7.32707 11.0857 7.0598 11.2103 6.77707 11.1802C6.49434 11.2275 6.22105 11.1158 6.02082 10.8794L4.30203 9.16069C3.89932 8.79545 3.89932 8.14233 4.30203 7.73971C4.70469 7.3371 5.35781 7.3371 5.76043 7.73971L6.71047 8.68803L9.07891 6.06006C9.45703 5.63682 10.1102 5.60245 10.5355 5.98358ZM10.5355 12.8603C10.9566 13.2384 10.991 13.8915 10.6086 14.3169L7.51656 17.7544C7.32707 17.9607 7.0598 18.0853 6.77707 18.0552C6.49434 18.1025 6.22105 17.9908 6.02082 17.7544L4.30203 16.0357C3.89932 15.6705 3.89932 15.0173 4.30203 14.6134C4.70469 14.2138 5.35781 14.2138 5.76043 14.6134L6.71047 15.563L9.07891 12.9333C9.45703 12.5123 10.1102 12.4779 10.5355 12.8603ZM13.625 8.46889C13.625 7.70963 14.2395 7.09389 15 7.09389H24.625C25.3855 7.09389 26 7.70963 26 8.46889C26 9.22944 25.3855 9.84389 24.625 9.84389H15C14.2395 9.84389 13.625 9.22944 13.625 8.46889ZM13.625 15.3439C13.625 14.5833 14.2395 13.9689 15 13.9689H24.625C25.3855 13.9689 26 14.5833 26 15.3439C26 16.1044 25.3855 16.7189 24.625 16.7189H15C14.2395 16.7189 13.625 16.1044 13.625 15.3439ZM10.875 22.2189C10.875 21.4583 11.4895 20.8439 12.25 20.8439H24.625C25.3855 20.8439 26 21.4583 26 22.2189C26 22.9794 25.3855 23.5939 24.625 23.5939H12.25C11.4895 23.5939 10.875 22.9794 10.875 22.2189ZM4 22.2189C4 21.0802 4.9234 20.1564 6.0625 20.1564C7.2016 20.1564 8.125 21.0802 8.125 22.2189C8.125 23.3576 7.2016 24.2814 6.0625 24.2814C4.9234 24.2814 4 23.3576 4 22.2189Z"
-                                          fill="currentColor"/>
-                                </svg>
-                                <span class="">Выписка</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="menu__contacts">
-                <h2 class="title menu__contacts__title">Контакты</h2>
-                <div class="menu__contacts__body">
-                    <ul class="menu__contacts__list">
-                        <li class="menu__contacts__item">
-                            <img src="img/message.svg" alt="">
-                            <div>
-                                <a href="mailto:info@circleschool.ru"
-                                   class="menu__contacts__link">info@circleschool.ru</a>
-                            </div>
-                        </li>
-                        <li class="menu__contacts__item">
-                            <img src="img/phone.svg" alt="">
-                            <div>
-                                <a href="tel:+79991234567" class="menu__contacts__link">+7 (999) 123 45 67</a>
-                            </div>
-                        </li>
-                        <li class="menu__contacts__item">
-                            <img src="img/map.svg" alt="">
-                            <div class="menu__contacts__address">
-                                <ul>
-                                    <li>ООО «CIRCLE SCHOOL»</li>
-                                    <li>ИНН 0273908137</li>
-                                    <li>КПП 027701001</li>
-                                    <li>ОГРН 1160280082896</li>
-                                </ul>
-                                <span>450065, Республика Башкортостан, г. Уфа, ул. Карла Маркса, 3Б, офис 403 по будням с 9:00 до 18:00</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<main>
-    <section class="page">
-        <div class="container">
-            <div class="page__inner">
-                <img src="https://placehold.co/1180x450" alt="Medical Institution Image" class="page__image">
-                <h1 class="title page__title">Поликлиника №52</h1>
-                <div class="page__body">
-                    <!--     SIDEBAR     -->
-                    <aside class="page__sidebar">
-                        <nav class="page__sidebar__navigation">
-                            <ul class="page__sidebar__list">
-                                <li class="page__sidebar__item">
-                                    <a href="#" class="page__sidebar__link page__sidebar__link-active">
-                                        <svg class="page__sidebar__image" width="30" height="30" viewBox="0 0 30 30"
-                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M24.1667 6.44446H5.83333C4.8208 6.44446 4 7.26526 4 8.27779V8.8889H26V8.27779C26 7.26526 25.1788 6.44446 24.1667 6.44446ZM4 21.7222C4 22.7344 4.8208 23.5556 5.83333 23.5556H24.1667C25.1792 23.5556 26 22.7348 26 21.7222V10.1111H4V21.7222ZM18.0556 12.5556H22.9444C23.2806 12.5556 23.5556 12.8306 23.5556 13.1667C23.5556 13.5028 23.2806 13.7778 22.9444 13.7778H18.0556C17.7194 13.7778 17.4444 13.5028 17.4444 13.1667C17.4444 12.8306 17.7194 12.5556 18.0556 12.5556ZM18.0556 15H22.9444C23.2806 15 23.5556 15.275 23.5556 15.6111C23.5556 15.9472 23.2806 16.2222 22.9444 16.2222H18.0556C17.7194 16.2222 17.4444 15.9472 17.4444 15.6111C17.4444 15.275 17.7194 15 18.0556 15ZM18.0556 17.4445H22.9444C23.2819 17.4445 23.5556 17.7181 23.5556 18.0556C23.5556 18.3931 23.2806 18.6667 22.9444 18.6667H18.0556C17.7181 18.6667 17.4444 18.3931 17.4444 18.0556C17.4444 17.7181 17.7194 17.4445 18.0556 17.4445ZM10.7222 12.5556C12.0724 12.5556 13.1667 13.6502 13.1667 15C13.1667 16.3498 12.0724 17.4445 10.7222 17.4445C9.37205 17.4445 8.27778 16.3498 8.27778 15C8.27778 13.6502 9.37396 12.5556 10.7222 12.5556ZM8.27778 18.6667H13.1667C14.1792 18.6667 15 19.4875 15 20.5C15 20.8375 14.7264 21.1111 14.3889 21.1111H7.05556C6.71792 21.1111 6.44444 20.8361 6.44444 20.5C6.44444 19.4879 7.26524 18.6667 8.27778 18.6667Z"
-                                                  fill="currentColor"/>
-                                        </svg>
-                                        <span class="page__sidebar__text">О медицинском учреждении</span>
-                                    </a>
-                                </li>
-                                <li class="page__sidebar__item">
-                                    <a href="#" class="page__sidebar__link">
-                                        <svg class="page__sidebar__image" width="30" height="30" viewBox="0 0 30 30"
-                                             fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4 8.88878C4 7.53861 5.09427 6.44434 6.44444 6.44434H23.5556C24.9038 6.44434 26 7.53861 26 8.88878V21.111C26 22.4593 24.9038 23.5554 23.5556 23.5554H6.44444C5.09427 23.5554 4 22.4593 4 21.111V8.88878ZM10.1111 14.9999C10.1111 14.3238 9.56493 13.7777 8.88889 13.7777C8.21285 13.7777 7.66667 14.3238 7.66667 14.9999C7.66667 15.6759 8.21285 16.2221 8.88889 16.2221C9.56493 16.2221 10.1111 15.6759 10.1111 14.9999ZM10.1111 11.3332C10.1111 10.6572 9.56493 10.111 8.88889 10.111C8.21285 10.111 7.66667 10.6572 7.66667 11.3332C7.66667 12.0093 8.21285 12.5554 8.88889 12.5554C9.56493 12.5554 10.1111 12.0093 10.1111 11.3332ZM10.1111 18.6666C10.1111 17.9905 9.56493 17.4443 8.88889 17.4443C8.21285 17.4443 7.66667 17.9905 7.66667 18.6666C7.66667 19.3426 8.21285 19.8888 8.88889 19.8888C9.56493 19.8888 10.1111 19.3426 10.1111 18.6666ZM12.5556 10.4166C12.0476 10.4166 11.6389 10.8252 11.6389 11.3332C11.6389 11.8412 12.0476 12.2499 12.5556 12.2499H21.1111C21.6191 12.2499 22.0278 11.8412 22.0278 11.3332C22.0278 10.8252 21.6191 10.4166 21.1111 10.4166H12.5556ZM12.5556 14.0832C12.0476 14.0832 11.6389 14.4919 11.6389 14.9999C11.6389 15.5079 12.0476 15.9166 12.5556 15.9166H21.1111C21.6191 15.9166 22.0278 15.5079 22.0278 14.9999C22.0278 14.4919 21.6191 14.0832 21.1111 14.0832H12.5556ZM12.5556 17.7499C12.0476 17.7499 11.6389 18.1586 11.6389 18.6666C11.6389 19.1745 12.0476 19.5832 12.5556 19.5832H21.1111C21.6191 19.5832 22.0278 19.1745 22.0278 18.6666C22.0278 18.1586 21.6191 17.7499 21.1111 17.7499H12.5556Z"
-                                                  fill="currentColor"/>
-                                        </svg>
-                                        <span class="page__sidebar__text">Услуги</span>
-                                    </a>
-                                </li>
-                                <li class="page__sidebar__item">
-                                    <a href="#" class="page__sidebar__link">
-                                        <svg class="page__sidebar__image" width="30" height="30" viewBox="0 0 30 30" fill="currentColor"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.9789 25.5057C11.7301 22.7399 6.72852 16.0366 6.72852 12.2714C6.72852 7.70318 10.4317 4 14.9999 4C19.5664 4 23.2713 7.70318 23.2713 12.2714C23.2713 16.0366 18.2309 22.7399 16.0209 25.5057C15.491 26.1648 14.5088 26.1648 13.9789 25.5057ZM14.9999 15.0285C16.5207 15.0285 17.7571 13.7921 17.7571 12.2714C17.7571 10.7507 16.5207 9.51427 14.9999 9.51427C13.4792 9.51427 12.2428 10.7507 12.2428 12.2714C12.2428 13.7921 13.4792 15.0285 14.9999 15.0285Z"
-                                                  fill="currentColor"/>
-                                        </svg>
-                                        <span class="page__sidebar__text">Местонахождение</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </aside>
-                    <!--     CONTENT     -->
-                    <div class="page__content">
-
-                    </div>
-                    <!--     END CONTENT     -->
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-
-<footer class="footer">
-    <div class="container">
-        <div class="footer__inner">
-            <a href="/" class="logo footer__logo">
-                <img src="img/logo.svg" alt="Footer logotype">
-                <span>MED.PROGRESS ©</span>
-            </a>
-
-            <nav class="footer__navigation">
-                <ul class="footer__list">
-                    <li class="footer__item"><a href="/" class="footer__link">Главная</a></li>
-                    <li class="footer__item"><a href="/payments" class="footer__link">Платежи через сайт</a></li>
-                    <li class="footer__item"><a href="/about" class="footer__link">О нас</a></li>
-                    <li class="footer__item"><a href="/privacy-policy" class="footer__link">Политика
-                        конфеденциальности</a></li>
-                    <li class="footer__item"><a href="/public-offer" class="footer__link">Публичная оферта</a></li>
-                </ul>
+          <div class="menu__navigation">
+            <h2 class="title menu__navigation__title">Меню</h2>
+            <nav class="menu__navigation__body">
+              <ul class="menu__navigation__list">
+                <li class="menu__navigation__item">
+                  <a
+                    href="#"
+                    class="menu__navigation__link menu__navigation__link-with-icon"
+                  >
+                    <svg
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15 15.0006C17.7619 15.0006 20.0003 12.7618 20.0003 10.0003C20.0003 7.2388 17.7619 5 15 5C12.2381 5 9.99973 7.2388 9.99973 10.0003C9.99973 12.7618 12.2381 15.0006 15 15.0006ZM16.9806 16.8757H13.0194C9.28133 16.8757 6.24951 19.9071 6.24951 23.6456C6.24951 24.3933 6.8558 25 7.6035 25H22.3973C23.145 25.0012 23.7505 24.3957 23.7505 23.6456C23.7505 19.9071 20.7191 16.8757 16.9806 16.8757Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <span>Личные данные</span>
+                  </a>
+                </li>
+                <li class="menu__navigation__item">
+                  <a
+                    href="#"
+                    class="menu__navigation__link menu__navigation__link-with-icon"
+                  >
+                    <svg
+                      class=""
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 8.88878C4 7.53861 5.09427 6.44434 6.44444 6.44434H23.5556C24.9038 6.44434 26 7.53861 26 8.88878V21.111C26 22.4593 24.9038 23.5554 23.5556 23.5554H6.44444C5.09427 23.5554 4 22.4593 4 21.111V8.88878ZM10.1111 14.9999C10.1111 14.3238 9.56493 13.7777 8.88889 13.7777C8.21285 13.7777 7.66667 14.3238 7.66667 14.9999C7.66667 15.6759 8.21285 16.2221 8.88889 16.2221C9.56493 16.2221 10.1111 15.6759 10.1111 14.9999ZM10.1111 11.3332C10.1111 10.6572 9.56493 10.111 8.88889 10.111C8.21285 10.111 7.66667 10.6572 7.66667 11.3332C7.66667 12.0093 8.21285 12.5554 8.88889 12.5554C9.56493 12.5554 10.1111 12.0093 10.1111 11.3332ZM10.1111 18.6666C10.1111 17.9905 9.56493 17.4443 8.88889 17.4443C8.21285 17.4443 7.66667 17.9905 7.66667 18.6666C7.66667 19.3426 8.21285 19.8888 8.88889 19.8888C9.56493 19.8888 10.1111 19.3426 10.1111 18.6666ZM12.5556 10.4166C12.0476 10.4166 11.6389 10.8252 11.6389 11.3332C11.6389 11.8412 12.0476 12.2499 12.5556 12.2499H21.1111C21.6191 12.2499 22.0278 11.8412 22.0278 11.3332C22.0278 10.8252 21.6191 10.4166 21.1111 10.4166H12.5556ZM12.5556 14.0832C12.0476 14.0832 11.6389 14.4919 11.6389 14.9999C11.6389 15.5079 12.0476 15.9166 12.5556 15.9166H21.1111C21.6191 15.9166 22.0278 15.5079 22.0278 14.9999C22.0278 14.4919 21.6191 14.0832 21.1111 14.0832H12.5556ZM12.5556 17.7499C12.0476 17.7499 11.6389 18.1586 11.6389 18.6666C11.6389 19.1745 12.0476 19.5832 12.5556 19.5832H21.1111C21.6191 19.5832 22.0278 19.1745 22.0278 18.6666C22.0278 18.1586 21.6191 17.7499 21.1111 17.7499H12.5556Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <span class="">Медицинские учреждения</span>
+                  </a>
+                </li>
+                <li class="menu__navigation__item">
+                  <a
+                    href="#"
+                    class="menu__navigation__link menu__navigation__link-with-icon"
+                  >
+                    <svg
+                      class=""
+                      width="30"
+                      height="30"
+                      viewBox="0 0 30 30"
+                      fill="currentColor"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.5355 5.98358C10.9566 6.36471 10.991 7.01655 10.6086 7.44022L7.51656 10.8794C7.32707 11.0857 7.0598 11.2103 6.77707 11.1802C6.49434 11.2275 6.22105 11.1158 6.02082 10.8794L4.30203 9.16069C3.89932 8.79545 3.89932 8.14233 4.30203 7.73971C4.70469 7.3371 5.35781 7.3371 5.76043 7.73971L6.71047 8.68803L9.07891 6.06006C9.45703 5.63682 10.1102 5.60245 10.5355 5.98358ZM10.5355 12.8603C10.9566 13.2384 10.991 13.8915 10.6086 14.3169L7.51656 17.7544C7.32707 17.9607 7.0598 18.0853 6.77707 18.0552C6.49434 18.1025 6.22105 17.9908 6.02082 17.7544L4.30203 16.0357C3.89932 15.6705 3.89932 15.0173 4.30203 14.6134C4.70469 14.2138 5.35781 14.2138 5.76043 14.6134L6.71047 15.563L9.07891 12.9333C9.45703 12.5123 10.1102 12.4779 10.5355 12.8603ZM13.625 8.46889C13.625 7.70963 14.2395 7.09389 15 7.09389H24.625C25.3855 7.09389 26 7.70963 26 8.46889C26 9.22944 25.3855 9.84389 24.625 9.84389H15C14.2395 9.84389 13.625 9.22944 13.625 8.46889ZM13.625 15.3439C13.625 14.5833 14.2395 13.9689 15 13.9689H24.625C25.3855 13.9689 26 14.5833 26 15.3439C26 16.1044 25.3855 16.7189 24.625 16.7189H15C14.2395 16.7189 13.625 16.1044 13.625 15.3439ZM10.875 22.2189C10.875 21.4583 11.4895 20.8439 12.25 20.8439H24.625C25.3855 20.8439 26 21.4583 26 22.2189C26 22.9794 25.3855 23.5939 24.625 23.5939H12.25C11.4895 23.5939 10.875 22.9794 10.875 22.2189ZM4 22.2189C4 21.0802 4.9234 20.1564 6.0625 20.1564C7.2016 20.1564 8.125 21.0802 8.125 22.2189C8.125 23.3576 7.2016 24.2814 6.0625 24.2814C4.9234 24.2814 4 23.3576 4 22.2189Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                    <span class="">Выписка</span>
+                  </a>
+                </li>
+              </ul>
             </nav>
+          </div>
+          <div class="menu__contacts">
+            <h2 class="title menu__contacts__title">Контакты</h2>
+            <div class="menu__contacts__body">
+              <ul class="menu__contacts__list">
+                <li class="menu__contacts__item">
+                  <img src="img/message.svg" alt="" />
+                  <div>
+                    <a
+                      href="mailto:info@circleschool.ru"
+                      class="menu__contacts__link"
+                      >info@circleschool.ru</a
+                    >
+                  </div>
+                </li>
+                <li class="menu__contacts__item">
+                  <img src="img/phone.svg" alt="" />
+                  <div>
+                    <a href="tel:+79991234567" class="menu__contacts__link"
+                      >+7 (999) 123 45 67</a
+                    >
+                  </div>
+                </li>
+                <li class="menu__contacts__item">
+                  <img src="img/map.svg" alt="" />
+                  <div class="menu__contacts__address">
+                    <ul>
+                      <li>ООО «CIRCLE SCHOOL»</li>
+                      <li>ИНН 0273908137</li>
+                      <li>КПП 027701001</li>
+                      <li>ОГРН 1160280082896</li>
+                    </ul>
+                    <span
+                      >450065, Республика Башкортостан, г. Уфа, ул. Карла
+                      Маркса, 3Б, офис 403 по будням с 9:00 до 18:00</span
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</footer>
 
-<script src="js/main.js" type="text/javascript"></script>
-</body>
+    <main>
+      <section class="page">
+        <div class="container">
+          <div class="page__inner">
+            <img
+              src="https://placehold.co/1180x450"
+              alt="Medical Institution Image"
+              class="page__image"
+            />
+            <h1 class="title page__title">Поликлиника №52</h1>
+            <div class="page__body">
+              <!--     SIDEBAR     -->
+              <aside class="page__sidebar">
+                <nav class="page__sidebar__navigation">
+                  <ul class="page__sidebar__list">
+                    <li class="page__sidebar__item">
+                      <a
+                        href="#"
+                        class="page__sidebar__link page__sidebar__link-active"
+                      >
+                        <svg
+                          class="page__sidebar__image"
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M24.1667 6.44446H5.83333C4.8208 6.44446 4 7.26526 4 8.27779V8.8889H26V8.27779C26 7.26526 25.1788 6.44446 24.1667 6.44446ZM4 21.7222C4 22.7344 4.8208 23.5556 5.83333 23.5556H24.1667C25.1792 23.5556 26 22.7348 26 21.7222V10.1111H4V21.7222ZM18.0556 12.5556H22.9444C23.2806 12.5556 23.5556 12.8306 23.5556 13.1667C23.5556 13.5028 23.2806 13.7778 22.9444 13.7778H18.0556C17.7194 13.7778 17.4444 13.5028 17.4444 13.1667C17.4444 12.8306 17.7194 12.5556 18.0556 12.5556ZM18.0556 15H22.9444C23.2806 15 23.5556 15.275 23.5556 15.6111C23.5556 15.9472 23.2806 16.2222 22.9444 16.2222H18.0556C17.7194 16.2222 17.4444 15.9472 17.4444 15.6111C17.4444 15.275 17.7194 15 18.0556 15ZM18.0556 17.4445H22.9444C23.2819 17.4445 23.5556 17.7181 23.5556 18.0556C23.5556 18.3931 23.2806 18.6667 22.9444 18.6667H18.0556C17.7181 18.6667 17.4444 18.3931 17.4444 18.0556C17.4444 17.7181 17.7194 17.4445 18.0556 17.4445ZM10.7222 12.5556C12.0724 12.5556 13.1667 13.6502 13.1667 15C13.1667 16.3498 12.0724 17.4445 10.7222 17.4445C9.37205 17.4445 8.27778 16.3498 8.27778 15C8.27778 13.6502 9.37396 12.5556 10.7222 12.5556ZM8.27778 18.6667H13.1667C14.1792 18.6667 15 19.4875 15 20.5C15 20.8375 14.7264 21.1111 14.3889 21.1111H7.05556C6.71792 21.1111 6.44444 20.8361 6.44444 20.5C6.44444 19.4879 7.26524 18.6667 8.27778 18.6667Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                        <span class="page__sidebar__text"
+                          >О медицинском учреждении</span
+                        >
+                      </a>
+                    </li>
+                    <li class="page__sidebar__item">
+                      <a href="#" class="page__sidebar__link">
+                        <svg
+                          class="page__sidebar__image"
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M4 8.88878C4 7.53861 5.09427 6.44434 6.44444 6.44434H23.5556C24.9038 6.44434 26 7.53861 26 8.88878V21.111C26 22.4593 24.9038 23.5554 23.5556 23.5554H6.44444C5.09427 23.5554 4 22.4593 4 21.111V8.88878ZM10.1111 14.9999C10.1111 14.3238 9.56493 13.7777 8.88889 13.7777C8.21285 13.7777 7.66667 14.3238 7.66667 14.9999C7.66667 15.6759 8.21285 16.2221 8.88889 16.2221C9.56493 16.2221 10.1111 15.6759 10.1111 14.9999ZM10.1111 11.3332C10.1111 10.6572 9.56493 10.111 8.88889 10.111C8.21285 10.111 7.66667 10.6572 7.66667 11.3332C7.66667 12.0093 8.21285 12.5554 8.88889 12.5554C9.56493 12.5554 10.1111 12.0093 10.1111 11.3332ZM10.1111 18.6666C10.1111 17.9905 9.56493 17.4443 8.88889 17.4443C8.21285 17.4443 7.66667 17.9905 7.66667 18.6666C7.66667 19.3426 8.21285 19.8888 8.88889 19.8888C9.56493 19.8888 10.1111 19.3426 10.1111 18.6666ZM12.5556 10.4166C12.0476 10.4166 11.6389 10.8252 11.6389 11.3332C11.6389 11.8412 12.0476 12.2499 12.5556 12.2499H21.1111C21.6191 12.2499 22.0278 11.8412 22.0278 11.3332C22.0278 10.8252 21.6191 10.4166 21.1111 10.4166H12.5556ZM12.5556 14.0832C12.0476 14.0832 11.6389 14.4919 11.6389 14.9999C11.6389 15.5079 12.0476 15.9166 12.5556 15.9166H21.1111C21.6191 15.9166 22.0278 15.5079 22.0278 14.9999C22.0278 14.4919 21.6191 14.0832 21.1111 14.0832H12.5556ZM12.5556 17.7499C12.0476 17.7499 11.6389 18.1586 11.6389 18.6666C11.6389 19.1745 12.0476 19.5832 12.5556 19.5832H21.1111C21.6191 19.5832 22.0278 19.1745 22.0278 18.6666C22.0278 18.1586 21.6191 17.7499 21.1111 17.7499H12.5556Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                        <span class="page__sidebar__text">Услуги</span>
+                      </a>
+                    </li>
+                    <li class="page__sidebar__item">
+                      <a href="#" class="page__sidebar__link">
+                        <svg
+                          class="page__sidebar__image"
+                          width="30"
+                          height="30"
+                          viewBox="0 0 30 30"
+                          fill="currentColor"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M13.9789 25.5057C11.7301 22.7399 6.72852 16.0366 6.72852 12.2714C6.72852 7.70318 10.4317 4 14.9999 4C19.5664 4 23.2713 7.70318 23.2713 12.2714C23.2713 16.0366 18.2309 22.7399 16.0209 25.5057C15.491 26.1648 14.5088 26.1648 13.9789 25.5057ZM14.9999 15.0285C16.5207 15.0285 17.7571 13.7921 17.7571 12.2714C17.7571 10.7507 16.5207 9.51427 14.9999 9.51427C13.4792 9.51427 12.2428 10.7507 12.2428 12.2714C12.2428 13.7921 13.4792 15.0285 14.9999 15.0285Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                        <span class="page__sidebar__text">Местонахождение</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </aside>
+              <!--     CONTENT     -->
+              <div class="page__content">
+                <div class="medical-intitution">
+                  <h2 class="subtitile medical-institution__subtitle">
+                    Немного о нас
+                  </h2>
+                  <div class="medical-institution__content">
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random
+                        text. It has roots in a piece of classical Latin literature
+                        from 45 BC, making it over 2000 years old. Richard
+                        McClintock, a Latin professor at Hampden-Sydney College in
+                        Virginia, looked up one of the more obscure Latin words,
+                        consectetur, from a Lorem Ipsum passage, and going through
+                        the cites of the word in classical literature, discovered
+                        the undoubtable source. Lorem Ipsum comes from sections
+                        1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The
+                        Extremes of Good and Evil) by Cicero, written in 45 BC. This
+                        book is a treatise on the theory of ethics, very popular
+                        during the Renaissance. The first line of Lorem Ipsum,
+                        "Lorem ipsum dolor sit amet..", comes from a line in section
+                        1.10.32.
+                      </p>
+                      <p>
+                        The standard chunk of Lorem Ipsum used since the 1500s is
+                        reproduced below for those interested. Sections 1.10.32 and
+                        1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are
+                        also reproduced in their exact original form, accompanied by
+                        English versions from the 1914 translation by H. Rackham.
+                      </p>
+                      <p>
+                        There are many variations of passages of Lorem Ipsum
+                        available, but the majority have suffered alteration in some
+                        form, by injected humour, or randomised words which don't
+                        look even slightly believable. If you are going to use a
+                        passage of Lorem Ipsum, you need to be sure there isn't
+                        anything embarrassing hidden in the middle of text. All the
+                        Lorem Ipsum generators on the Internet tend to repeat
+                        predefined chunks as necessary, making this the first true
+                        generator on the Internet. It uses a dictionary of over 200
+                        Latin words, combined with a handful of model sentence
+                        structures, to generate Lorem Ipsum which looks reasonable.
+                        The generated Lorem Ipsum is therefore always free from
+                        repetition, injected humour, or non-characteristic words
+                        etc.
+                      </p>
+                  </div>
+                </div>
+              </div>
+              <!--     END CONTENT     -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <a href="/" class="logo footer__logo">
+            <img src="img/logo.svg" alt="Footer logotype" />
+            <span>MED.PROGRESS ©</span>
+          </a>
+
+          <nav class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="/" class="footer__link">Главная</a>
+              </li>
+              <li class="footer__item">
+                <a href="/payments" class="footer__link">Платежи через сайт</a>
+              </li>
+              <li class="footer__item">
+                <a href="/about" class="footer__link">О нас</a>
+              </li>
+              <li class="footer__item">
+                <a href="/privacy-policy" class="footer__link"
+                  >Политика конфеденциальности</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="/public-offer" class="footer__link"
+                  >Публичная оферта</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js" type="text/javascript"></script>
+  </body>
 </html>
