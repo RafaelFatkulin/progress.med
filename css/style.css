@@ -49,6 +49,7 @@
     --shadow-dark: 0px 0px 10px rgba(0, 0, 0, 0.1);
     --primary-button-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
     --form-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+    --modal-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 
     /*  RADIUS  */
     --radius-xl: 15px;
@@ -191,9 +192,6 @@ main {
     border-color: var(--blue);
 }
 
-@media screen and (max-width: 768px) {
-}
-
 .button-green {
     border-radius: var(--radius-s);
     padding: var(--padding-normal);
@@ -310,6 +308,50 @@ a.button {
 
 .logo span {
     font-size: var(--m);
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    transform: translate(1000%, -50%);
+    left: 50%;
+    right: 0;
+    padding: var(--padding-normal);
+    max-width: 440px;
+    height: auto;
+    width: 100%;
+    z-index: 100;
+    -webkit-transform: translate(500%, -50%);
+    -moz-transform: translate(500%, -50%);
+    -ms-transform: translate(500%, -50%);
+    -o-transform: translate(500%, -50%);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.modal__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--white);
+    box-shadow: var(--form-shadow);
+    padding: var(--padding-normal);
+    border-radius: var(--radius-l);
+    -webkit-border-radius: var(--radius-l);
+    -moz-border-radius: var(--radius-l);
+    -ms-border-radius: var(--radius-l);
+    -o-border-radius: var(--radius-l);
+}
+
+.modal-opened {
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 /*  HEADER  */
@@ -1630,35 +1672,45 @@ body.menu-is-active {
 }
 /*  ===============================================  */
 
-
 /*  APPOINTMENT DEPARTMENT  */
-.appointment-department {}
+.appointment-department {
+}
 
-.appointment-department__form {}
+.appointment-department__form {
+}
 
-.appointment-department__button {}
+.appointment-department__button {
+}
 /*  ===============================================  */
 
 /*  APPOINTMENT SERVICE  */
-.appointment-service {}
+.appointment-service {
+}
 
-.appointment-service__form {}
+.appointment-service__form {
+}
 
-.appointment-service__button {}
+.appointment-service__button {
+}
 /*  ===============================================  */
 
 /*  APPOINTMENT DOCTOR  */
-.appointment-doctor {}
+.appointment-doctor {
+}
 
-.appointment-doctor__form {}
+.appointment-doctor__form {
+}
 
-.appointment-doctor__button {}
+.appointment-doctor__button {
+}
 /*  ===============================================  */
 
 /*  APPOINTMENT DATE  */
-.appointment-date {}
+.appointment-date {
+}
 
-.appointment-date__form {}
+.appointment-date__form {
+}
 
 .appointment-date__form__head {
     padding: 0 10px 10px 10px;
@@ -1726,9 +1778,11 @@ body.menu-is-active {
 /*  ===============================================  */
 
 /*  APPOINTMENT DATE  */
-.appointment-time {}
+.appointment-time {
+}
 
-.appointment-time__form {}
+.appointment-time__form {
+}
 
 .appointment-time__form__head {
     padding: 0 10px 10px 10px;
@@ -1780,5 +1834,64 @@ body.menu-is-active {
     display: block;
     min-width: 125px;
     text-align: start;
+}
+/*  ===============================================  */
+
+/*  APPOINTMENT CONFIRMATION  */
+.appointment-confirmation {
+}
+
+.appointment-confirmation__form {
+    gap: 20px;
+}
+
+.appointment-confirmation__data {
+}
+
+.appointment-confirmation__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.appointment-confirmation__confirm-button,
+.appointment-confirmation__close {
+    width: 50%;
+}
+
+.appointment-modal {}
+
+.appointment-modal__subtitle {}
+
+.appointment-modal__text {}
+
+.appointment-modal__buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.appointment-modal__button {
+    width: 50%;
+}
+
+@media screen and (max-width: 480px) {
+    .appointment-confirmation__buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .appointment-confirmation__confirm-button,
+    .appointment-confirmation__close {
+        width: 100%;
+    }
+
+    .appointment-modal__buttons {
+        flex-direction: column;
+    }
+    
+    .appointment-modal__button {
+        width: 100%;
+    }
 }
 /*  ===============================================  */
