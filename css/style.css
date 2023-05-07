@@ -144,23 +144,6 @@ main {
     font-weight: 400;
 }
 
-@media screen and (max-width: 768px) {
-    .title {
-        text-align: center;
-        font-size: var(--xl-tablet);
-    }
-
-    .subtitle {
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .title {
-        font-size: var(--xl-mobile);
-    }
-}
-
 /*   BUTTONS   */
 
 .button {
@@ -277,17 +260,24 @@ a.button {
 }
 
 .input-password label {
-    content: "";
-    display: inline-block;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 20px;
-    height: 16px;
-    background: url("../img/eye.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 20px;
     position: absolute;
     top: calc(50% - 10px);
-    right: 30px;
-    cursor: pointer;
+    right: 20px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.input-password label:hover {
+    color: var(--lightblue);
 }
 
 .input:hover {
@@ -440,12 +430,6 @@ a.button {
     transform: translateY(20px) rotate(45deg);
 }
 
-@media screen and (max-width: 480px) {
-    .header__phone {
-        display: none;
-    }
-}
-
 /*  ===============================================  */
 /*  MENU  */
 .menu {
@@ -560,56 +544,6 @@ a.button {
 
 body.menu-is-active {
     overflow: hidden;
-}
-
-@media screen and (max-width: 992px) {
-    .menu__inner {
-        padding: 64px 0;
-    }
-
-    .menu__navigation__title {
-        margin-bottom: 48px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .menu__inner {
-        padding: 36px 0;
-        grid-template-columns: 1fr;
-        grid-gap: 48px;
-    }
-
-    .menu__contacts__title,
-    .menu__navigation__title {
-        text-align: left;
-        margin-bottom: 24px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .menu__inner {
-        padding: 24px 0;
-        grid-gap: 36px;
-    }
-
-    .menu li a,
-    .menu li,
-    .menu span {
-        font-size: var(--m);
-    }
-
-    .menu__contacts__item:not(:last-child) {
-        align-items: center;
-    }
-
-    .menu__contacts__title,
-    .menu__navigation__title {
-        margin-bottom: 18px;
-    }
-
-    .menu__navigation__list {
-        gap: 12px;
-    }
 }
 
 /*  ===============================================  */
@@ -736,52 +670,6 @@ body.menu-is-active {
     display: none;
 }
 
-@media screen and (max-width: 1280px) {
-    .auth__inner {
-        padding: 100px 0;
-    }
-
-    .auth__form {
-        margin-top: 80px;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .auth__inner {
-        padding: 50px 0;
-        grid-template-columns: 1fr;
-    }
-
-    .auth__form {
-        margin-top: 40px;
-    }
-
-    .auth__slider {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .auth__text {
-        margin-top: 36px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .auth__form__input:nth-child(2) {
-        margin-top: 12px;
-    }
-
-    .auth__form__buttons {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .auth__form__button {
-        width: 100%;
-    }
-}
-
 /*  ===============================================  */
 
 /*  INSTRUCTION  */
@@ -856,42 +744,6 @@ body.menu-is-active {
     border-color: #f7f7f7;
 }
 
-@media screen and (max-width: 1280px) {
-    .instruction__inner {
-        padding: 84px 0;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .instruction__inner {
-        padding: 72px 0;
-    }
-
-    .instruction__content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .instruction__title {
-        margin-bottom: 48px;
-    }
-
-    .instruction__content {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .instruction__inner {
-        padding: 64px 0;
-    }
-
-    .instruction__title {
-        margin-bottom: 36px;
-    }
-}
-
 /*  ===============================================  */
 
 /* FOOTER */
@@ -935,20 +787,6 @@ body.menu-is-active {
 
 .footer__link:hover {
     color: var(--lightblue);
-}
-
-@media screen and (max-width: 992px) {
-    .footer__inner {
-        flex-direction: column;
-        gap: 24px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .footer__list {
-        flex-direction: column;
-        gap: 12px;
-    }
 }
 
 /*   REGISTRATION   */
@@ -1036,72 +874,6 @@ body.menu-is-active {
     font-size: var(--s);
 }
 
-@media screen and (max-width: 1280px) {
-    .registration__inner {
-        padding: 80px 0;
-    }
-
-    .registration__title {
-        margin-bottom: 60px;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .registration__inner {
-        padding: 60px 0;
-    }
-
-    .registration__title {
-        margin-bottom: 40px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .registration__inner {
-        padding: 48px 0;
-    }
-
-    .registration__title {
-        margin-bottom: 36px;
-    }
-
-    .registration__subtitle {
-        margin-bottom: 32px;
-    }
-
-    .registration__button {
-        width: 100%;
-        font-size: var(--m);
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .registration__inner {
-        padding: 30px 0;
-    }
-
-    .registration__title {
-        margin-bottom: 24px;
-    }
-
-    .registration__input {
-        margin-bottom: 24px;
-    }
-
-    .registration__input label {
-        margin-bottom: 12px;
-    }
-
-    .registration__account {
-        margin-bottom: 16px;
-    }
-
-    .registration__personal-data {
-        margin-bottom: 24px;
-        font-size: var(--s);
-    }
-}
-
 /*  ===============================================  */
 
 /*    PAGE    */
@@ -1177,60 +949,6 @@ body.menu-is-active {
     border-left: 1px solid var(--blue-transparent-m);
 }
 
-@media screen and (max-width: 1280px) {
-    .page__title {
-        padding-top: 80px;
-        padding-bottom: 60px;
-    }
-
-    .page__inner {
-        padding-bottom: 80px;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .page__body {
-        grid-template-columns: 1fr;
-    }
-
-    .page__inner {
-        padding-bottom: 60px;
-    }
-
-    .page__title {
-        padding: 60px 0;
-    }
-
-    .page__sidebar {
-        display: none;
-    }
-
-    .page__content {
-        padding: 0;
-        border-left: 0;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .page__inner {
-        padding-bottom: 48px;
-    }
-
-    .page__title {
-        padding: 48px 0;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .page__inner {
-        padding-bottom: 32px;
-    }
-
-    .page__title {
-        padding: 32px 0;
-    }
-}
-
 /*  ===============================================  */
 
 /*  PERSONAL DATA  */
@@ -1253,16 +971,6 @@ body.menu-is-active {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-}
-
-@media screen and (max-width: 768px) {
-    .personal-data__inputs {
-        grid-template-columns: 1fr;
-    }
-
-    .personal-data__button {
-        width: 100%;
-    }
 }
 
 /*  ===============================================  */
@@ -1361,93 +1069,6 @@ body.menu-is-active {
     margin-top: auto;
 }
 
-@media screen and (max-width: 1280px) {
-    .medical-institutions__block__body {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .medical-institutions__item {
-        min-height: 324px;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .medical-institutions__block__body {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
-    }
-
-    .medical-institutions__item__button {
-        pointer-events: auto;
-        display: block;
-        width: 100%;
-        text-align: center;
-        margin-top: auto;
-    }
-
-    .medical-institutions__item__text {
-        max-height: -webkit-max-content;
-        max-height: -moz-max-content;
-        max-height: max-content;
-        max-height: max-content;
-        max-height: max-content;
-        overflow: visible;
-        display: -webkit-box;
-        -webkit-line-clamp: initial;
-        -webkit-box-orient: vertical;
-    }
-
-    .medical-institutions__item:hover {
-        pointer-events: none;
-    }
-
-    .medical-institutions__item:hover .medical-institutions__item__image {
-        display: block;
-        background-color: #c9e2ff;
-    }
-
-    .medical-institutions__item:hover .medical-institutions__item__text {
-        max-height: -webkit-max-content;
-        max-height: -moz-max-content;
-        max-height: max-content;
-    }
-
-    .medical-institutions__item:hover .medical-institutions__item__button {
-        display: block;
-    }
-
-    .medical-institutions__item:hover {
-        background-color: inherit;
-    }
-}
-
-@media screen and (max-width: 810px) {
-    .medical-institutions__block__body {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .medical-institutions__block__head {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .medical-institutions__block__head__button {
-        width: 100%;
-    }
-
-    .medical-institutions__block__body {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .medical-institutions__item__title {
-        text-align: center;
-        font-size: var(--l);
-    }
-}
-
 /*  ===============================================  */
 
 /*  EXTRACTS  */
@@ -1512,28 +1133,6 @@ body.menu-is-active {
     width: min-content;
 }
 
-@media screen and (max-width: 768px) {
-    .extracts__items {
-        margin: 36px 0;
-    }
-}
-
-@media screen and (max-width: 540px) {
-    .extract__item {
-        width: -webkit-fit-content;
-        width: -moz-fit-content;
-        width: fit-content;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .extracts__items {
-        margin: 24px 0;
-    }
-    .extracts__button {
-        width: 100%;
-    }
-}
 /*  ===============================================  */
 
 /*    MEDICAL INSTITUTION    */
@@ -1552,25 +1151,6 @@ body.menu-is-active {
     margin-bottom: 24px;
 }
 
-@media screen and (max-width: 768px) {
-    .medical-institution__subtitle {
-        text-align: center;
-    }
-
-    .medical-institution__content {
-        margin-top: 36px;
-    }
-
-    .medical-institution__content p:not(:last-child) {
-        margin-bottom: 18px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .medical-institution__content {
-        margin-top: 24px;
-    }
-}
 /*  ===============================================  */
 
 /*  APPOINTMENT  */
@@ -1648,27 +1228,6 @@ body.menu-is-active {
 
 .appointment__button-select:hover {
     border-color: var(--lighter-blue);
-}
-
-@media screen and (max-width: 768px) {
-    .appointment__header {
-        margin-bottom: 48px;
-    }
-
-    .appointment__breadcrumbs {
-        flex-wrap: wrap;
-        margin: 0 auto;
-    }
-
-    .appointment__button-select {
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .appointment__header {
-        margin-bottom: 32px;
-    }
 }
 /*  ===============================================  */
 
@@ -1763,21 +1322,10 @@ body.menu-is-active {
     margin-top: 60px;
 }
 
-@media screen and (max-width: 768px) {
-    .appointment-date__button {
-        width: 100%;
-        margin-top: 48px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .appointment-date__button {
-        margin-top: 32px;
-    }
-}
 /*  ===============================================  */
 
 /*  APPOINTMENT DATE  */
+
 .appointment-time {
 }
 
@@ -1859,11 +1407,14 @@ body.menu-is-active {
     width: 50%;
 }
 
-.appointment-modal {}
+.appointment-modal {
+}
 
-.appointment-modal__subtitle {}
+.appointment-modal__subtitle {
+}
 
-.appointment-modal__text {}
+.appointment-modal__text {
+}
 
 .appointment-modal__buttons {
     display: flex;
@@ -1873,25 +1424,5 @@ body.menu-is-active {
 
 .appointment-modal__button {
     width: 50%;
-}
-
-@media screen and (max-width: 480px) {
-    .appointment-confirmation__buttons {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .appointment-confirmation__confirm-button,
-    .appointment-confirmation__close {
-        width: 100%;
-    }
-
-    .appointment-modal__buttons {
-        flex-direction: column;
-    }
-    
-    .appointment-modal__button {
-        width: 100%;
-    }
 }
 /*  ===============================================  */
